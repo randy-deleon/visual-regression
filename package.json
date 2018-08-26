@@ -1,0 +1,44 @@
+{
+  "name": "visual-regression",
+  "version": "1.0.0",
+  "description": "I've been wanting about this to replace the deprecated huddles phantomcss screen comparison tool.",
+  "main": "index.js",
+  "scripts": {
+    "presetup": "babel-node src/index.js",
+    "setup": "babel-node src/index.js --runtype setup",
+    "start": "babel-node src/index.js --runtype baseline",
+    "test": "babel-node src/index.js --runtype test",
+    "yolo": "rimraf screenshots",
+    "clean:baselines": "rimraf screenshots/baselines/*",
+    "clean:failures": "rimraf screenshots/failures/*",
+    "clean:results": "rimraf screenshots/results/*",
+    "clean:all": "rimraf screenshots/*",
+    "eslint:check": "eslint --print-config . | eslint-config-prettier-check",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint src/** --fix"
+  },
+  "keywords": [
+    "puppeteer",
+    "resemblejs"
+  ],
+  "author": "randy de leon",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chalk": "^2.4.1",
+    "mz": "^2.7.0",
+    "puppeteer": "^1.7.0",
+    "resemblejs": "^2.10.3",
+    "rimraf": "^2.6.2",
+    "shortid": "^2.2.12",
+    "yargs": "^12.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.3.0",
+    "eslint-config-prettier": "^3.0.1",
+    "prettier": "1.14.2"
+  }
+}

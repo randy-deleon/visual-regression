@@ -1,0 +1,10 @@
+{
+    "parser": "babylon",
+    "singleQuote": true,
+    "useTabs": false,
+    "trailingComma": "none",
+    "printWidth": 80,
+    "tabWidth": 2,
+    "noSemi": true,
+    "rcVerbose": true
+}
