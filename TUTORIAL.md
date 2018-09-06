@@ -403,7 +403,7 @@ const Options = {
   resultsPath:`${rootDir}\\${resultsDir}`,
   resultPathID: `${rootDir}\\${resultsDir}\\${shortId.generate()}`,
   failurePath: `${rootDir}\\${failuresDir}`,
-  misMatchPercentage: 30.0,
+  misMatchPercentage: 0.10,
   fullPage: true,
   comparisonOptions: {
       output: {
